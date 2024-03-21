@@ -1,0 +1,31 @@
+### 2장. User behavior and how to collect it.
+
+- User data의 종류
+    - explicit : 사용자가 직접 입력한 정보
+    - implicit : 사용자의 행동 데이터
+- 샵 브라우저를 통해 얻을 수 있는 고객 정보 -고객의 관심사를 추정할 수 있는 단서들
+    - page view
+    - page duration
+    - expansion clicks
+    - social media link
+    - save for later
+    - search terms
+- 구매 행위를 통해 얻을 수 있는 고객 정보
+    - 고객이 구매한 물품 중에서 outlier는 선물일 수 있음.
+    - 처음 구매보단 재구매가 소비자의 선호를 더 반영함.
+- 스트리밍 컨텐츠나 서비스 판매 시 얻을 수 있는 고객 정보
+    - 물품 구매보다 고객의 정보를 트래킹하기 유리함.
+    - 중간에 이탈률(지점), 완주율 등이 유용한 정보임.
+- 고객 평점에서 얻을 수 있는 정보
+    - 보통 별점과 문장 리뷰가 같이 있을 경우 그냥 별점만 있을 때보다 좋음
+- 고객에게 통제권을 줘라
+    - 고객은 자신의 취향을 추천에 반영함으로써 통제권을 획득하고 보다 자신의 입맛에 맞는 추천시스템을 만들고자함.(그런데 그것이 꼭 자신의 소비 행위랑 연결되진 않음.)
+    - 무플이 악플보다 나을수도, 안 좋을 수도 있음.
+- 로그인 기능이 없을 경우 identification issue 가 생김.
+- 웹 페이지 구성
+    - server side
+    - client side
+- 프로젝트 파일 링크 : https://github.com/practical-recommender-systems/moviegeek
+    - 도커 빌드를 요구함
+    - 도커 설치 : https://www.docker.com/get-started/
+    - 구현은 별도 폴더에서 수행

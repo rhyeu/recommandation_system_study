@@ -1,0 +1,1 @@
+- 교재 : https://www.amazon.com/Practical-Recommender-Systems-Kim-Falk/dp/1617292702

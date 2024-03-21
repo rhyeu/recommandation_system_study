@@ -1,0 +1,18 @@
+### 3장. Monitoring the System
+
+- 로그 데이터에서 소비자의 선호를 추출하는 프로세스가 필요함.
+- 추천시스템을 구축하는 데에 있어서 사이트의 현황을 파악하는 대시보드는 필수적임
+- 웹 분석의 두 가지 종류
+    - off-site (potential에 주목)
+        - Opportunity—Indicates how big the potential of the site is in terms of the num- ber of visitors the sector has in total.
+        - Visibility—Indicates how easy it is to find the site.
+        - Voice—Indicates how much people are talking about the site.
+    - on-site (현황에 주목; 이 책에서 다룰 내용)
+        - conversion rate
+            - conversion은 사업마다 다름
+                - 아마존, 넷플릭스 - 방문당 컨버전을 따짐
+                - 온라인 중고차 마켓 - 라이프사이클에서의 컨버전을 따짐.
+            - conversion path
+                - 유저가 landing page부터 시작해서 conversion에 이르기까지 지나간 액션이나 페이지 경로
+        - persona
+            - 주 고객집단(들)을 대표할 수 있는 가상의 인물(들)

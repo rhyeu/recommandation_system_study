@@ -1,0 +1,23 @@
+### 4장. Ratings and how to calculate them
+
+- implicit rating 이 중요한 이유
+    - 고객들은 자신이 무엇을 좋아하는 지 잘 모르고, 친구들이 이야기하는 걸 따라하는 경향이 있음.
+    - explicit rating 보다 얻기가 더 쉬움
+    - 
+- user-item matrix
+    - sparsity problem이 발생
+        - collaborative filtering 을 통해 유사한 유저를 찾아줘서 해결 가능
+        - 타임슬롯을 나눠서 recommonder를 운영할경우 trade-off가 생김
+            - accuracy vs data sparsity
+    - 고용된 리뷰어들이 존재할 수 있음.
+- calculating implicit rating
+    - time based approach
+        - 시점을 고려한 rating
+            - time-decay algorithm
+    - behavior-based approach
+        - column에 item뿐만 아니라 이벤트까지 넣음.
+- implicit rating을 계산할 때에는 '어떻게 평가할 것'인 지가 아니라 '구매할 지에 대한 예측'과 관계되어야한다.
+    - 여러 이벤트 들의 가중합으로 구성할 수 있음.
+        - 여기엔 이벤트별 상한값을 고려할 수 있음.
+- 베스트셀러외에 구매한 이력이 고객의 특성을 더 잘 나타낸다.
+    - 이것도 수식으로 표현 가능(TF-IDF)

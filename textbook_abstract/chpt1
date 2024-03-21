@@ -1,0 +1,48 @@
+## chpt1. What is a recommander?
+- 이 책이 커버할 내용들
+    - Understanding the task a recommender system is trying to emulate
+    - Developing insight into what are nonpersonalized and personalized recommendations
+    - Developing a taxonomy of how to describe recommenders
+    - Introducing the example website MovieGEEKs
+
+### 1.1 Real-life recommandations
+- 우리 주변엔 많은 추천이 존재함(사람에 의한 추천, 코펜하겐 공항 처럼 맥락에 의한 추천, 알고리즘에 의한 추천)
+- 온라인 추천의 종류
+    - non-personalized : 인기있는 top 10
+    - semi-personlized : 성연령기반
+    - personalized :
+        - 가정 - 사람들은 베스트셀러만이 아니라 롱테일에 존재하는 아이템도 산다.
+        - 웹사이트에서 무한한 상품을 고객에게 제공하기 위해선 추천 시스템이 필요함.
+- 넷플릭스는 다양한 추천 방법을 활용함
+    - 장르
+    - 시간
+    - 언론에서 말하는 등의 신선도
+    - 친구들이 본 걸 추천
+    - 직접 입력한 선호도
+    - 
+- 넷플릭스 top pick 추천에 대한 상상도
+![[Pasted image 20240310214227.png]]
+
+### 1.2 Taxonomy of recommander systems
+
+1. Domain
+    - type of comtent : 영화, 강좌, 음식 등등
+2. Purpose
+    - 엔드 유저 : 자신의 취향에 맞는 컨텐츠 찾기
+    - 공급자 : 많이 팔고 오래 머물게 하는 것
+3. Context
+    - 추천을 받는 환경(장소, 시간, 어플을 사용하는 상황)을 의미
+4. Personalization level
+    - Non personalized : 모두에게 같은 리스트를 보여줌.
+    - Semi-personalized : 성/연령, 국적, 직업, 사용 환경(PC/mobile) 등의 seg에 따른 추천
+    - Personalized : 사람에 따라 다름 (ex - 지금 보고 있는 상품을 산 고객들이 샀던 리스트)
+5. whose opinions
+6. privacy & trustworthness : provider의 이익만을 위해 움직이지 않는다는 확신을 줘야함.
+7. interfaces : 추천 과정의 input과 output
+    - organic presentation : 추천이 웹 페이지의 자연스러운 일부인 경우
+    - white-box recommandation : 추천에 대해 설명하는 경우
+8. algorithms
+    - collaborative filtering : 사용 데이터를 쓰는 경우
+        - 유저 피드백이 충분히 쌓여야함
+    - content based filtering : 유저 프로파일과 컨텐츠 메타 데이터를 쓰는 경우
+        - 메타 데이터가 충분히 쌓여야함.
